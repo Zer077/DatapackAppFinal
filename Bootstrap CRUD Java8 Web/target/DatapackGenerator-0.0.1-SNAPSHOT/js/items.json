@@ -1,0 +1,755 @@
+[
+    {
+        "select": true,
+        "position": 1,
+        "name": "building_blocks",
+        "description": "Building blocks",
+        "imgRoot": "BricksJE5BE3.png",
+        "items": [
+            {
+                "name": "stone",
+                "version": "1.0",
+                "type": "tag",
+                "ruta": "Stone.png",
+                "stackSize": 1,
+                "rarity": 0
+            },
+            {
+                "name": "granite",
+                "version": "1.0",
+                "ruta": "Granite.png",
+                "stackSize": 16,
+                "rarity": 1
+            },
+            {
+                "name": "polished_granite",
+                "version": "1.0",
+                "ruta": "PolishedGranite.png",
+                "rarity": 2
+            },
+            {
+                "name": "diorite",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Diorite.png",
+                "rarity": 3
+            },
+            {
+                "name": "polished_diorite",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "PolishedDiorite.png"
+            },
+            {
+                "name": "andesite",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Andesite.png"
+            },
+            {
+                "name": "polished_andesite",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "PolishedAndesite.png"
+            },
+            {
+                "name": "grass_block",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "GrassBlock.png"
+            },
+            {
+                "name": "dirt",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Dirt.png"
+            },
+            {
+                "name": "coarse_dirt",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "CoarseDirt.png"
+            },
+            {
+                "name": "podzol",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Podzol.png"
+            },
+            {
+                "name": "cobblestone",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Cobblestone.png"
+            },
+            {
+                "name": "oak_planks",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "OakPlanks.png"
+            },
+            {
+                "name": "spruce_planks",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "SprucePlanks.png"
+            },
+            {
+                "name": "birch_planks",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "BirchPlanks.png"
+            },
+            {
+                "name": "jungle_planks",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "JunglePlanks.png"
+            },
+            {
+                "name": "acacia_planks",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "AcaciaPlanks.png"
+            },
+            {
+                "name": "dark_oak_planks",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "DarkOakPlanks.png"
+            },
+            {
+                "name": "bedrock",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Bedrock.png"
+            },
+            {
+                "name": "sand",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Sand.png"
+            },
+            {
+                "name": "red_sand",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "RedSand.png"
+            },
+            {
+                "name": "gravel",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Gravel.png"
+            },
+            {
+                "name": "gold_ore",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "GoldOre.png"
+            },
+            {
+                "name": "iron_ore",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "IronOre.png"
+            },
+            {
+                "name": "coal_ore",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "CoalOre.png"
+            },
+            {
+                "name": "oak_log",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "OakLog.png"
+            },
+            {
+                "name": "spruce_log",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "SpruceLog.png"
+            },
+            {
+                "name": "birch_log",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "BirchLog.png"
+            },
+            {
+                "name": "jungle_log",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "JungleLog.png"
+            },
+            {
+                "name": "acacia_log",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "AcaciaLog.png"
+            },
+            {
+                "name": "dark_oak_log",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "DarkOakLog.png"
+            },
+            {
+                "name": "stripped_oak_log",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "StrippedOakLog.png"
+            },
+            {
+                "name": "stripped_spruce_log",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "StrippedSpruceLog.png"
+            },
+            {
+                "name": "stripped_birch_log",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "StrippedBirchLog.png"
+            },
+            {
+                "name": "stripped_jungle_log",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "StrippedJungleLog.png"
+            },
+            {
+                "name": "stripped_acacia_log",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "StrippedAcaciaLog.png"
+            },
+            {
+                "name": "stripped_dark_oak_log",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "StrippedDarkOak.png"
+            },
+
+            {
+                "name": "stripped_oak_wood",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "StrippedOakWood.png"
+            },
+            {
+                "name": "stripped_spruce_wood",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "StrippedSpruceWood.png"
+            },
+            {
+                "name": "stripped_birch_wood",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "StrippedBirchWood.png"
+            },
+            {
+                "name": "stripped_jungle_wood",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "StrippedJungleWood.png"
+            },
+            {
+                "name": "stripped_acacia_wood",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "StrippedAcaciaWood.png"
+            },
+            {
+                "name": "stripped_dark_oak_wood",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "StrippedDarkOakWood.png"
+            },
+
+            {
+                "name": "oak_wood",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "OakWood.png"
+            },
+            {
+                "name": "spruce_wood",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "SpruceWood.png"
+            },
+            {
+                "name": "birch_wood",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "BirchWood.png"
+            },
+            {
+                "name": "jungle_wood",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "JungleWood.png"
+            },
+            {
+                "name": "acacia_wood",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "AcaciaWood.png"
+            },
+            {
+                "name": "dark_oak_wood",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "DarkOakWood.png"
+            },
+            {
+                "name": "sponge",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Sponge.png"
+            },
+            {
+                "name": "wet_sponge",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "WetSponge.png"
+            }, {
+                "name": "glass",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Glass.png"
+            },
+            {
+                "name": "lapis_ore",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "LapisLazuliOre.png"
+            },
+            {
+                "name": "lapis_block",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "LapisLazuliBlock.png"
+            },
+            {
+                "name": "sandstone",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Sandstone.png"
+            }
+
+
+        ]
+    },
+    {
+        "position": 1,
+        "name": "decoration_blocks",
+        "description": "Decoration Blocks",
+        "imgRoot": "BookshelfJE4BE2.png",
+        "items": [
+            {
+                "name": "oak_sapling",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "OakSapling.png"
+            },
+            {
+                "name": "spruce_saplig",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "SpruceSapling.png"
+            },
+            {
+                "name": "birch_sapling",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "BirchSapling.png"
+            },
+            {
+                "name": "jungle_sapling",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "JungleSapling.png"
+            },
+            {
+                "name": "acacia_sapling",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "AcaciaSapling.png"
+            },
+            {
+                "name": "dark_oak_sapling",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "DarkOakSapling.png"
+            },
+            {
+                "name": "oak_leaves",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "OakLeavesTextureUpdate.png"
+            }, {
+                "name": "spruce_leaves",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "SpruceLeavesTextureUpdate.png"
+            }, {
+                "name": "birch_leaves",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "BirchLeavesTextureUpdate.png"
+            }, {
+                "name": "jungle_leaves",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "JungleLeavesTextureUpdate.png"
+            }, {
+                "name": "acacia_leaves",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "AcaciaLeavesTextureUpdate.png"
+            }, {
+                "name": "dark_oak_leaves",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "DarkOakLeavesTextureUpdate.png"
+            },
+            {
+                "name": "cobweb",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Cobweb.png"
+            },
+            {
+                "name": "Grass",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Grass.png"
+            },
+            {
+                "name": "fern",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Fern.png"
+            },
+            {
+                "name": "dead_bush",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Dead_Bush.png"
+            }
+        ]
+    },
+    {
+        "position": 1,
+        "name": "redstone",
+        "description": "Redstone",
+        "imgRoot": "Redstone_Dust.png",
+        "items": [
+
+            {
+                "name": "dispenser",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Dispenser.png"
+            },
+            {
+                "name": "note_block",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "NoteBlock.png"
+            },
+            {
+                "name": "stiky_piston",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "StickyPiston.png"
+            },
+            {
+                "name": "piston",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Piston.png"
+            },
+            {
+                "name": "tnt",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "TNT.png"
+            },
+            {
+                "name": "lever",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Lever.png"
+            },
+            {
+                "name": "stone_pressure_plate",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "StonePressurePlate.png"
+            },
+
+            {
+                "name": "oak_pressure_plate",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "OakPressurePlate.png"
+            }, {
+                "name": "spruce_pressure_plate",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "SprucePressurePlate.png"
+            }, {
+                "name": "birch_pressure_plate",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "BirchPressurePlate.png"
+            }, {
+                "name": "jungle_pressure_plate",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "JunglePressurePlate.png"
+            }, {
+                "name": "acacia_pressure_plate",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "AcaciaPressurePlate.png"
+            }, {
+                "name": "dark_oak_pressure_plate",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "DarkOakPressurePlate.png"
+            },
+            {
+                "name": "redstone_torch",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "RedstoneTorch.png"
+            },
+            {
+                "name": "stone_button",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "StoneButton.png"
+            },
+            {
+                "name": "oak_trapdoor",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "OakTrapdoor.png"
+            },
+            {
+                "name": "spruce_trapdoor",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "SpruceTrapdoor.png"
+            },
+            {
+                "name": "birch_trapdoor",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "BirchTrapdoor.png"
+            },
+            {
+                "name": "jungle_trapdoor",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "JungleTrapdoor.png"
+            },
+            {
+                "name": "acacia_trapdoor",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "AcaciaTrapdoor.png"
+            },
+            {
+                "name": "dark_oak_trapdoor",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "DarkOakTrapdoor.png"
+            }
+        ]
+    },
+    {
+        "position": 1,
+        "name": "transportation",
+        "description": "Transportation",
+        "imgRoot": "descarga.png",
+        "items": [
+            {
+                "name": "powered_rail",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "PoweredRail.png"
+            },
+            {
+                "name": "detector_rail",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "DetectorRail.png"
+            },
+            {
+                "name": "rail",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Rail.png"
+            },
+            {
+                "name": "activator_rail",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "ActivatorRail.png"
+            },
+            {
+                "name": "minecart",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Minecart_(Item).png"
+            },
+            {
+                "name": "saddle",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Saddle.png"
+            }
+
+
+        ]
+    },
+    {
+        "searcher": true,
+        "position": 4,
+        "name": "search_items",
+        "description": "Search Items",
+        "imgRoot": "Compass.png",
+        "items": []
+    },
+    {
+        "position": 2,
+        "name": "miscellanous",
+        "description": "Miscellanous",
+        "imgRoot": "150px-Lava_Bucket.png",
+        "items": [
+            {
+                "name": "beacon",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Beacon.png"
+            }
+
+
+
+        ]
+    },
+    {
+        "position": 2,
+        "name": "foodstuffs",
+        "description": "Foodstuffs",
+        "imgRoot": "150px-Apple.png",
+        "items": [
+
+            {
+                "name": "apple",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Apple.png"
+            }
+
+
+        ]
+    },
+    {
+        "position": 2,
+        "name": "tools",
+        "description": "Tools",
+        "imgRoot": "150px-Iron_Axe.png",
+        "items": [
+
+            {
+                "name": "iron_shovel",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Iron_Shovel.png"
+            }
+
+        ]
+    },
+    {
+        "position": 2,
+        "name": "combat",
+        "description": "Combat",
+        "imgRoot": "Golden_Sword.png",
+        "items": [
+
+            {
+                "name": "bow",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Bow.png"
+            }
+
+        ]
+    },
+    {
+        "position": 2,
+        "name": "brewing",
+        "description": "Brewing",
+        "imgRoot": "waterBottle.png",
+        "items": [
+            {
+                "name": "harmingpotion",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Potion_of_Harming.png",
+                "effects": [
+                    {
+                        "name": "Instant Health",
+                        "state": 16
+                    },
+                    {
+                        "name": "Instant Health III",
+                        "state": 17
+                    }
+                ]
+            }
+
+        ]
+    },
+    {
+        "position": 5,
+        "name": "special_items",
+        "description": "Special Items",
+        "imgRoot": "Enchanted_Golden_Apple.gif",
+        "items": [
+            {
+                "name": "fire",
+                "type": "item",
+                "version": "1.0",
+                "ruta": "Fire.png"
+            },
+            {
+                "name": "Slabs",
+                "version": "1.0",
+                "type": "tag",
+                "ruta": "TagSlab.png"
+            },
+            {
+                "name": "Stair",
+                "version": "1.0",
+                "type": "tag",
+                "ruta": "TagStairs.png"
+            },
+            {
+                "name": "Log",
+                "version": "1.0",
+                "type": "tag",
+                "ruta": "Taglogs.png"
+            }
+        ]
+    }
+]

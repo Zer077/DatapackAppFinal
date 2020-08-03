@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>DatapackGeneratorServlet</servlet-name>
+        <servlet-class>servletDPG.DatapackGeneratorServlet</servlet-class>
+        <init-param>
+            <param-name>CRAFT_DIMENSION</param-name>
+            <param-value>/3</param-value>
+        </init-param>
+        <init-param>
+            <param-name>LIST_ITEM_DIMENSION</param-name>
+            <param-value>/6</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DatapackGeneratorServlet</servlet-name>
+        <url-pattern>/DatapackGeneratorServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

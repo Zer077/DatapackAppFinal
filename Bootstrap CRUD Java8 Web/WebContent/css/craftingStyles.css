@@ -1,0 +1,720 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14-dic-2019, 21:10:23
+    Author     : usuario
+*/
+@font-face {
+    font-family: 'minecraft';
+    /*La URL no puede llevar espacios en blanco o guiones*/
+    src: url('../fonts/MinecraftRegular.ttf')
+}
+
+.btn-disabled{
+    background-color: lightslategray !important;
+    border-color: darkcyan !important;
+}
+
+.ban-pointer{
+    cursor: not-allowed !important;
+}
+
+/*Afecta a los bordes de las celdas*/
+*{
+    -webkit-box-sizing: unset;
+    -moz-box-sizing: unset;
+    box-sizing: unset;
+}
+
+html, .superior{
+    background:url('./../img/BACKGROUND.png');
+}
+
+.separator{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+#inst{
+    height: fit-content;
+    background: lightgrey;
+    align-self: center;
+    border: 20px solid lightgrey;
+    border-radius: 20px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+    opacity: 1;
+}
+
+.bordes, .result-div{
+    border-top: 2px solid #4c4c4c !important;
+    border-left: 2px solid #4c4c4c !important;
+}
+
+.no-back, .no-back>div{
+    background: unset !important;
+    background-color: unset !important;
+}
+
+.categoria{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    border-left: 4px solid #ffffff;
+    border-right: 4px solid #4c4c4c;
+}
+
+.upCats{
+    /*padding-top: 10px !important;*/
+    border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    border-top: 4px solid #ffffff;
+    border-bottom: 0;
+}
+
+.downCats{
+    /*padding-bottom: 10px !important;*/
+    border-radius: 0 0 10px 10px ;
+    -moz-border-radius: 0 0 10px 10px ;
+    -webkit-border-radius: 0 0 10px 10px ;
+    border-bottom: 4px solid #4c4c4c;
+    border-top: 0;
+}
+
+/*HACE QUE NO APAREZCA UN BORDE AZUL CUANDO SE PULSA EL BOTON*/
+.categoria:focus, #search:focus{
+    outline: 0;
+}
+
+.selectUp{
+    padding-top: 10px;
+}
+
+.selectDown{
+    padding-bottom: 10px;
+}
+
+.selectUp, .selectDown{
+    background-color: lightgrey !important;
+}
+
+.list-item{
+    width: fit-content;
+    background-color: lightgrey;
+    padding: 10px;
+    border-left: 4px solid white;
+    border-right: 4px solid #4c4c4c;
+}
+
+.titulo, #search{
+    font-family: 'minecraft' !important;
+    font-size: xx-large;
+}
+
+.div-table{
+    overflow-y: scroll;
+    width: fit-content;
+}
+
+table{
+    border-collapse: unset;
+}
+
+.invisible{
+    display: none;
+}
+
+.mesa-craft{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #c6c6c6;
+}
+
+.categoria, .div-cell, .result-div, #search, .div-table::-webkit-scrollbat-track{
+    background-color: #8b8b8b;
+}
+
+.result-item{
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+}
+
+.result-div{
+    display: flex;
+    align-self: center;
+    height: 65px;
+    width: 65px;
+    border-right: 2px solid white !important;
+    border-bottom: 2px solid white !important;
+}
+
+.div-cell{
+    height: 50px;
+    width: 50px;
+}
+
+.div-cell:hover, .result-div:hover{
+    background-color: whitesmoke;
+}
+
+/*ESTA CODIGO PERMITE QUE NO HAYA BACKGRAUND CUANDO SE ARRASTRA EL ELEMENTO*/
+.ui-draggable-dragging .div-cell:hover{
+    background-color: unset !important;
+}
+
+.ui-draggable-dragging{
+    z-index: 5;
+}
+
+.cell{
+    padding-top: 1px black !important;
+    padding-left: 1px black !important;
+    border-right: 2px solid white !important;
+    border-bottom: 2px solid white !important;
+    /*
+   border-color: #373737 #fff #fff #373737 !important;
+   border-style: solid;
+   border-width: 2px !important;
+    */
+}
+
+#footer {
+    padding-bottom: 10px;
+}
+
+#header{
+    padding-top: 10px;
+}
+
+#header, #footer {
+    /*float:left;*/
+    /*width:100%;*/
+    display: flex;
+    align-items: baseline;
+
+    font-size:93%;
+    line-height:normal;
+}
+
+#header ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+#header li {
+    float:left;
+    margin:0;
+    padding:0;
+}
+
+#header a {
+    display:block;
+}
+/*TOOLTIP*/
+.ui-tooltip{
+    color:white !important;
+    background-color: #1D0E1D !important;
+    font-family: 'minecraft' !important;
+    font-size: 1.5em !important;
+    width: fit-content !important;
+    height: fit-content !important;
+    /*padding-right: 10px! important;
+    padding-left: 10px !important;
+    */
+    border: 2px darkslateblue solid !important;
+    border-radius: 3px !important;
+}
+
+.uncommon{
+    color: #ff5 !important;
+}
+
+.rare{
+    color: #5ff !important;
+}
+
+.epic{
+    color: #f5f !important;
+}
+/*--------------------------------------------*/
+.ui-helper-hidden-accessible, div[role=tooltip]{
+    display: none;
+}
+
+/*SCROLLBAR*/
+/* width */
+.div-table::-webkit-scrollbar {
+    width: 25px;
+}
+/* Track */
+.div-table::-webkit-scrollbar-track {
+    background: #8b8b8b;
+    width: 50px !important;
+    border-bottom: 2px solid whitesmoke !important;
+    border-right: 2px solid whitesmoke !important;
+    border-top: 2px solid #4c4c4c !important;
+    border-left: 2px solid #4c4c4c !important;
+}
+
+/* Handle */
+.div-table::-webkit-scrollbar-thumb {
+    /*background: red;*/
+    background-image: url('../img/SCROLL.png');
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain;
+    /*
+    border-top: 2px solid whitesmoke !important;
+    border-left: 2px solid whitesmoke !important;
+    border-bottom: 2px solid #4c4c4c !important;
+    border-right: 2px solid #4c4c4c !important;
+    */
+}
+
+.count-result{
+    width: 60px;
+    text-align: center;
+    font-family: 'minecraft' !important;
+    font-size: x-large !important;
+}
+
+div[role=dialog] div{
+    height: fit-content;
+}
+
+div[role=dialog]{
+    background-color: lightblue;
+    border-radius: 10px;
+    width: fit-content !important;
+}
+
+#countResult{
+    padding: 10px;
+    min-height: fit-content !important;
+}
+
+.alert {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: unset !important;
+}
+
+.specialCat{
+    margin-left: auto;
+    margin-right: unset;
+}
+
+#search{
+    color: white;
+    height: 30px;
+    margin-left: 5px;
+}
+
+#search, .ui-tooltip{
+    text-shadow: 2px 2px gray;
+}
+
+/*
+    SE HA DE ESTABLECER LA POSICION MANUALMENTE
+    PUESTO QUE EL METODO POSITION() DE JQUERY-UI NO
+    CUMPLE CON LOS REQUISITOS NECESARIOS
+*/
+.not_found{
+    width: fit-content;
+    position: absolute;
+    top: 39.5%;
+    left: 33.5%;
+    z-index: 1;
+}
+
+.not_found label{
+    padding-left: 12px;
+    margin: unset !important;
+    vertical-align: text-top;
+}
+
+.not_found img{
+    vertical-align: -webkit-baseline-middle;
+}
+
+.div-table .alert{
+    margin-top: unset !important;
+}
+
+.blocked {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .7;
+}
+/*
+    NECESARIO PARA CENTRAR EL MENSAJE DE QUE NO SE HAN ENCONTRADO ELEMENTOS
+    AL USAR EL BUSCADOR
+*/
+.relative{
+    position: relative;
+}
+
+.stack, .stack_ge_10{
+    color: white;
+    font-family: 'minecraft';
+    position: relative;
+    /*
+    top: -40%;
+    font-size: large;
+    */
+    top: -63%;
+    font-size: 2.5em;
+    text-shadow: 4px 3px dimgrey;
+}
+
+/*
+    LA POSICION DEL VALOR DEL STACK VARIA EN FUNCION DE SI ESTA FORMADA
+    POR UN DIGITO O DOS
+*/
+/*----------------------------------------------------------------------*/
+.stack{
+    /*left: 80%;*/
+    left: 66%;
+}
+
+/*STACK GREATHER OR EQUALS 10*/
+.stack_ge_10{
+    /*left: 70%;*/
+    left: 30%;
+}
+/*----------------------------------------------------------------------*/
+
+.no-stack{
+    position: absolute;
+    /*
+    top: 60%;
+    left: 60%;
+    */
+    top: 40%;
+    left: 40%;
+}
+
+/*-------------------------------------------------
+                      SWITCH
+---------------------------------------------------*/
+.shapeType{
+    width: 390px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shape{
+    align-self: center;
+    font-size: x-large;
+}
+
+.desactivated{
+    color: lightslategray;
+    font-style: italic;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: yellowgreen;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+/*-------------------------------------------------------*/
+/*WORLD CHOOSER*/
+/**/
+.wc-title{
+    font-family: 'minecraft';
+    font-size: x-large;
+    color: dimgray;
+}
+
+.worldChooser{
+    /*margin-left: 50px;*/
+    background-color: aquamarine;
+    border-radius: 15px;
+    border: 1px solid black;
+    width: fit-content;
+    height: fit-content !important;
+}
+
+ul{
+    margin: 0 !important;
+    list-style-image: url('../img/folder.png');
+}
+
+li{
+    margin-left: 20px;
+    padding-right: 20px;
+    padding-top: 1ex;
+    height: 4em !important;
+}
+/*
+li:first-child:hover{
+    border-top-right-radius: 15px;
+}
+
+li:last-child:hover{
+    border-bottom-right-radius: 15px;
+}
+*/
+li:hover{
+    background-color: lightseagreen;
+    margin-left: 25px;
+    padding-right: 15px;
+    font-style: italic;
+    list-style-image: url('../img/open_folder.png');
+}
+
+.world, .world-last{
+    height: 2em !important;
+    padding-left: 10px;
+    position: relative;
+    top: -1.5ex;
+    color: white;
+    font-size: x-large;
+    font-family: 'minecraft';
+    text-shadow: 2px 2px gray;
+}
+
+.world::after {
+    content: "";
+    display: inline-block;
+    /*vertical-align: super;*/
+    vertical-align: middle;
+    width: 154%;
+    margin-left: -45%;
+    margin-top: -5%;
+    border-top: 1px solid black;
+}
+
+li:hover .world::after{
+    margin-left: -48.5%;
+}
+
+/**/
+
+/*INSTALL SUCCESS*/
+/*-------------------------------------*/
+.success-install{
+    padding: 20px !important;
+}
+
+.ui-dialog .ui-dialog-content {
+    /* position: relative;*/
+    position: initial !important;
+}
+
+.ui-widget-overlay {
+    opacity: .7 !important;
+}
+/*-------------------------------------*/
+
+form label{
+    min-inline-size: max-content;
+}
+
+label{
+    font-family: 'minecraft';
+    font-size: x-large;
+}
+
+input[type=text]{
+    font-family: 'minecraft';
+}
+
+#dp_info input[type=text]{
+    font-size: x-large;
+}
+
+input[name=dp_desc], input[name=sub]{
+    font-size: large !important;
+}
+
+/*-------------------------------------*/
+#trash{
+    align-self: flex-end;
+}
+
+#trash img{
+    vertical-align: baseline;
+}
+/*
+#trash:hover{
+    margin-left: -10px;
+}
+*/
+
+.superior{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+/*----------------------------------------------------------------*/
+/*                      FLECHA MESA CRAFTEO                       */
+/*----------------------------------------------------------------*/
+.arrow{
+    align-self: center;
+}
+
+.arrow img{
+    width: 150%;
+    margin-left: -30%;
+}
+/*----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------*/
+/*                      BOTONES FORMULARIO                        */
+/*----------------------------------------------------------------*/
+#aux img{
+    margin-right: 10px;
+}
+
+#down{
+    width: 150px;
+}
+
+#aux, #down{
+    font-family: 'minecraft';
+    height: 35px;
+    font-size: x-large;
+}
+
+#down img{
+    margin-right: 5px;
+}
+
+#down img{
+    transform: rotate(90deg);
+    width: 30px;
+    margin-left: -10%;
+}
+/*----------------------------------------------------------------*/
+
+.ui-dialog-title, .ui-dialog-content, .ui-button{
+    font-family: 'minecraft' !important;
+}
+
+.ui-button{
+    font-size: large !important;
+}
+
+.ui-dialog-title{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.info-count{
+    position: relative;
+    top: 90px;
+    height: fit-content;
+}
+
+.info-count img{
+    width: 30px;
+}
+
+.result{
+    display: flex;
+}
+
+.negative{color: #FF5555;text-shadow: 2px 2px #4D1A1A !important;}
+.positive{color: #5555FF;text-shadow: 2px 2px #19194A !important;}
+.no-effects{color:grey;}
+
+.filler{
+    margin-top: -7px;
+    margin-bottom: -7px;
+    display: block;
+}
+
+.filler:first-child{
+    margin-top: 5px !important;
+}
+
+.ui-dialog-buttonpane{
+    text-align: center !important;
+    border-width: 0 !important;
+    margin-top: 0 !important; 
+    padding: 0 !important;
+}
+
+.ui-dialog-buttonset {
+    float: none!important;
+}
+
+.alert-danger {
+    color: aliceblue !important;
+}
+
+.error-inst{
+    padding: 1em 1em !important;
+    font-size: x-large;
+}
